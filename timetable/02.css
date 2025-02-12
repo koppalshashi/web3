@@ -1,0 +1,71 @@
+nav{
+    text-align: center;
+}
+ul{
+    text-align: right ;
+    width: 200;
+}
+/* body{
+    background-color: aqua;
+} */
+
+
+
+.mydiv{
+    
+    border: 1px solid black;
+    width: 1332px;
+}
+
+.date{
+    display: flex;
+}
+
+.row1{
+    display: flex;
+    width: 30cm;
+}
+
+.row2{
+   
+    /* display: flex; */
+    height: 4cm;
+    text-align: center;
+    width: 17.3cm;
+
+}
+
+.row{
+    display: flex;
+    width: 36cm;
+}
+.row3{
+    display:right;
+}
+
+/* .row4{
+    width: 16.55cm;
+    height: 9cm;
+    
+} */
+.rows1{
+ background-color: aqua;
+}
+
+.row4 {
+    width: 10cm; /* Make the table take the full width of its container */
+    table-layout: fixed; /* Ensure the table layout is fixed */
+}
+
+.row4 th, .row4 td {
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.index{
+    display: flex;
+}
+.index1{
+    
+    display: flex;
+}

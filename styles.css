@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+.topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the topic cards */
+}
+.topic {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.topic:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.topic h2 {
+  color: #35424a; /* Darker color for headings */
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.topic p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #35424a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* .topic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 66, 74, 0.1);
+  border-radius: 15px;
+  z-index: 0;
+  transition: opacity 0.3s;
+} */
+
+.topic:hover::before {
+  opacity: 0; /* Fade out the background on hover */
+}
+
+@media (max-width: 768px) {
+  .topics {
+      flex-direction: column; /* Stack topics vertically on smaller screens */
+  }
+
+  .topic {
+      flex: 1 1 100%; /* Full width for each topic */
+  }
+}
+
+
+
+header .logo h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    text-align: right;
+    justify-content:top;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    background-position: bottom;
+    background-size: cover;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.hero {
+    background: #e2e2e2;
+    padding: 50px 20px;
+    text-align: center;
+    background-position: bottom;
+    background-size: cover;
+}
+.hero h2 {
+    margin-bottom: 20px;
+    background-position: bottom;
+    background-size: cover;
+}
+.btn {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* News Ticker Styles */
+.news-ticker {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 5px 0; /* Padding for the ticker */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Font size */
+    position: relative; /* Positioning */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+/* time */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+
+}
+.date-time {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align:left;
+}
+/* time :end */
+
+/* Upcoming Events */
+/* upcoming events */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    height: 10cm;
+    
+}
+
+
+
+.event ul {
+    list-style-type: none;              
+    margin: 10px;                       
+    animation: scroll-up 3s linear infinite;
+    color: white;
+    height: 100px;
+    text-align:left;
+}
+.event li {
+    margin-bottom: 12px; /* Space between list items */
+}
+/* Keyframes for scrolling animation */
+
+/* upcoming events :end */
+
+
+
+
+
+
+/* coures */
+
+/* Reset some default styles */
+
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.topic {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 30%; /* Adjusts the width of each topic */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add custom focus outline */
+}
+
+
+
+
